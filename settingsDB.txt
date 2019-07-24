@@ -1,0 +1,10 @@
+1. Start H2 console;
+2. Saved Settings(Generic H2 (Server));
+3. Setting Name(Generic H2 (Server));
+4. Driver Class (org.h2.Driver);
+5. JDBC Url : jdbc:h2:tcp://localhost/Directory of your project where you would like to create the DB
+6. Username : sa;
+7. Password : " ";
+8. Connect
+9. Copy the sql.txt file and run it to create the database;
+10.Amend the DBConnector class so that it points to the connection string from 5. 

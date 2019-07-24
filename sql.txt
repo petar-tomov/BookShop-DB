@@ -1,0 +1,36 @@
+create table Book(
+ID int not null identity primary key,
+TITLE nvarchar(30) not null unique,
+YEAR int,
+PRICE int,
+ISBN varchar(30) not null unique,
+GENRE nvarchar(30)
+);
+
+create table Author(
+ID int not null identity primary key,
+FIRST_NAME nvarchar(20) not null,
+LAST_NAME nvarchar(20) not null
+);
+
+create table Genre(
+ID int not null identity primary key,
+NAME nvarchar(30) not null unique
+);
+
+create table Book_Author(
+ID int not null identity primary key,
+BOOK nvarchar(30) not null,
+AUTHOR nvarchar(30) not null
+);
+
+alter table book
+add foreign key(genre) references genre(name) on delete cascade on update cascade;
+
+alter table book_author
+add foreign key(book) references book(title) on delete cascade on update cascade;
+
+alter table book_author
+add foreign key(author) references author(last_name) on delete cascade on update cascade;
+
+

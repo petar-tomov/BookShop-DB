@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="driver/h2-1.4.193.jar"/>
+	<classpathentry kind="output" path="out/production/MyInterface08.12.16"/>
+</classpath>
